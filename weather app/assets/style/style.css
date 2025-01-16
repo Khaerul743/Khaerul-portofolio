@@ -1,0 +1,224 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #73c8fb, #c1e1fc);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+/* Loader styles */
+.loader {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #4f9cff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+/* Animasi spin untuk loader */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Container styles */
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header styles */
+.header {
+    background: #4f9cff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #4f9cff;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background: #4f9cff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-box button:hover {
+    background: #2d89ef;
+    transform: scale(1.05);
+}
+
+.weather-info {
+    text-align: left;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.weather-info.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.weather-info h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.weather-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.weather-details img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-details h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.weather-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+.additional-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.additional-info p {
+    margin-bottom: 8px;
+}
+
+/* Footer styles */
+.footer {
+    background: #4f9cff;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 0 0 12px 12px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #d4f1ff;
+}
+
+/* Auto-location button */
+.auto-location {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auto-location button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* new fitur */
+.auto-location button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.auto-location p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+/* error message */
+.error-message.show {
+    color: #ff4d4d; /* Warna merah untuk menonjolkan error */
+    background-color: #ffe6e6; /* Background merah muda */
+    border: 1px solid #ffcccc; /* Border warna merah */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}

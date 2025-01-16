@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weather App</h1>
+            <p>Get the latest weather updates for any city</p>
+        </header>
+        <main class="main-content">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+            <div class="auto-location">
+                <button id="auto-location-btn" class="auto-location-btn">Find Your Location</button>
+                <p id="location-status"></p>
+            </div>            
+            <div class="loader" id="loading-spinner"></div>
+            <div class="error-message" id="error-message"><p></p></div>
+            <div class="weather-info" id="weather-info">
+                <!-- <h2 id="city-name">City Name</h2>
+                <p id="date">January 15, 2025</p>
+
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div>
+                        <h3 id="temperature">25°C</h3>
+                        <p id="description">Clear Sky</p>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <p>Humidity: <span id="humidity">45%</span></p>
+                    <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
+                </div> -->
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Weather App by Khaerul &copy; 2025 | Powered by <a href="#">WeatherAPI</a></p>
+        </footer>
+    </div>
+
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
