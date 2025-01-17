@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Finder</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Film Finder</h1>
+            <p>Discover movies with detailed information</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search for a movie..." id="search-input">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="film-container" id="film-container">
+        </div>
+
+        <!-- Modal -->
+        <div id="film-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <h2 id="film-title">Title</h2>
+                <p><strong>Genre:</strong> <span id="film-genre"></span></p>
+                <p><strong>Director:</strong> <span id="film-director"></span></p>
+                <p><strong>Country:</strong> <span id="film-country"></span></p>
+                <p><strong>Rating:</strong> <span id="film-rating"></span></p>
+                <p><strong>Synopsis:</strong></p>
+                <p id="film-synopsis"></p>
+            </div>
+        </div>
+        <div class="modal-loading" id="modal-loading">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
